@@ -1,0 +1,104 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.header{
+    min-height: 200vh;
+    width: 200vh;
+    background: url(/Users/gm10/Desktop/Scrnshots/bg.png);
+     /* background-position: center;   */
+     /* background-size:cover ;  */
+     
+}
+.header{
+    background: radial-gradient(#fff, #ffd6d6 );
+}
+
+.links{
+    background: #ADD8E6;
+    width: 85%;
+    margin: auto;
+    padding:0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.links ul li a{
+    text-decoration: none ;
+    color: blue;
+    text-transform: uppercase;
+
+}
+.links ul li:hover{
+background: #000;
+}
+.links ul li::after{
+    content: '';
+    height:3px ;
+    width: 100%;
+    background:#009688 ;
+    position: absolute;
+    left:0;
+    bottom:-10%;
+    transition: 0.5s;
+}
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%); 
+    text-align: center;
+}
+.content h1{
+    background: lightgreen;
+    font-size: 70px;
+    margin-top: 80px;
+
+}
+button{
+    width: 200px;
+    padding: 15px 0px;
+    text-align: center;
+    margin:20px 10px ;
+    border-radius: 25px;
+    font-weight:bold ;
+    background: transparent;
+    border:2px solid #009688;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+background: #009688;
+height: 100%;
+width: 100%;
+border-radius: 25px;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: -1;
+transition: 0.5s;
+}
+button :hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+     
+     
