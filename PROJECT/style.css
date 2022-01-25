@@ -1,0 +1,130 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://coolthemestores.com/wp-content/uploads/2021/10/Lionel-Messi-wallpaper-background.jpg);
+    background-size: cover;
+    background-position: center;
+     
+}
+/* .header{
+    background: radial-gradient(#fff, #ffd6d6 );
+} */
+
+.links{
+    /* background: #ADD8E6; */
+    width: 85%;
+    margin: auto;
+    padding:0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-top: 20px;
+    /* padding: 4px; */
+    width: 220px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.links ul li a{
+    font-size: 25px;
+    background: white;
+    text-decoration: none ;
+    color: blue;
+    text-transform: uppercase;
+
+}
+.links ul li:hover::after{
+background: #eeea09;
+width: 100%;
+}
+.links ul li::after{
+    content: '';
+    height:3px ;
+    width: 0%;
+    background:#009688 ;
+    position: absolute;
+    left:0;
+    bottom:-10%;
+    transition: 0.5s;
+}
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%); 
+    text-align: center;
+}
+.content h1{
+    background: white;
+    font-size: 50px;
+    margin-top: 80px;
+    width: 60vh;
+    position: relative;
+    margin-left: 470px;
+    border-radius: 8px;
+
+}
+.marquee{
+background:cyan;
+margin-top: 15px ;
+}
+button{
+    font-size: 30px;
+    width: 300px;
+    height: 50px;
+    padding: 15px 10px;
+    text-align: center;
+    margin:20px 10px ;
+    border-radius: 25px;
+    font-weight:bold ;
+    background: transparent;
+    border:2px solid #009688;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    color: white;
+    background: #009688;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* z-index: -1; */
+    /* transition: 0.5s; */
+  
+}
+button :hover span{
+    width: 100%;
+}
+button:hover{
+    border: none ;
+
+}
+/* .videos{
+    position: relative;
+    margin-left: 20px;
+} */
+     .video{
+         position: relative;
+         margin-left: 3px;
+     }
+     
